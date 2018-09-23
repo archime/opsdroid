@@ -12,11 +12,7 @@ class Message:
     # pylint: disable=too-few-public-methods
     """A message object.
 
-<<<<<<< HEAD
-    Stores messages in format that allows OpsDroid to respond or react with
-=======
     Stores messages in a format that allows OpsDroid to respond or react with
->>>>>>> origin/master
     delays for thinking and typing as defined in configuration YAML file.
 
     Args:
@@ -37,10 +33,7 @@ class Message:
             against
         responded_to: Boolean initialized as False. True if message has been
             responded to
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
     """
 
     def __init__(self, text, user, room, connector, raw_message=None):
@@ -122,7 +115,3 @@ class Message:
         if 'thinking-delay' in self.connector.configuration:
             await self._thinking_delay()
         return await self.connector.react(self, emoji)
-<<<<<<< HEAD
-    
-=======
->>>>>>> origin/master
